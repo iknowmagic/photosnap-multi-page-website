@@ -1,0 +1,12 @@
+.features {
+  width: 100%;
+  height: 8000px;
+  background: url('~@/assets/images/design/Mobile - Features.jpg') no-repeat;
+
+  @include mq($from: tablet) {
+    background: url('~@/assets/images/design/Tablet - Features.jpg') no-repeat;
+  }
+  @include mq($from: desktop) {
+    background: url('~@/assets/images/design/Desktop - Features.jpg') no-repeat;
+  }
+}

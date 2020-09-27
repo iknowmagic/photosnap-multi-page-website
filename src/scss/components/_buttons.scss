@@ -1,0 +1,57 @@
+.btn {
+  transition: all 0.25 ease;
+}
+
+.button-1 {
+  @extend .btn;
+
+  width: 158px;
+  height: 40px;
+  color: #fff;
+  background-color: #000;
+
+  &:hover {
+    color: #fff;
+    background-color: #dfdfdf;
+  }
+}
+
+.button-2 {
+  @extend .btn;
+
+  color: #000;
+  background-color: transparent;
+
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+}
+
+.button-3 {
+  @extend .btn;
+
+  width: 158px;
+  height: 40px;
+  color: #000;
+  background-color: #fff;
+
+  &:hover {
+    color: #000;
+    background-color: #dfdfdf;
+  }
+}
+
+.button-4 {
+  @extend .btn;
+
+  color: #fff;
+  background-color: transparent;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+}
