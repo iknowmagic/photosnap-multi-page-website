@@ -1,8 +1,120 @@
 .main-container {
   width: 100%;
   height: 100%;
+  .main-header {
+    display: grid;
+    grid-template-areas: 'logo nav-right';
+    height: 72px;
+    padding: 0 24px;
+    background-color: #fff;
+
+    @include mq($from: tablet) {
+      grid-template-areas: 'logo nav-center nav-right';
+      padding: 0 39px;
+    }
+    @include mq($from: desktop) {
+      padding: 0 165px;
+    }
+
+    .main-logo {
+      grid-area: logo;
+      padding: 27px 0;
+    }
+    .main-nav-center {
+      display: grid;
+      grid-area: nav-center;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 22px;
+      justify-self: center;
+      width: 269px;
+      padding: 28px 0;
+      margin-left: 16px;
+      margin-left: -10px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      span:last-child {
+        justify-self: end;
+      }
+    }
+    .main-nav-right {
+      grid-area: nav-right;
+      align-self: start;
+      justify-self: end;
+      padding: 22px 0;
+
+      @include mq($from: tablet) {
+        padding: 16px 0;
+      }
+    }
+  }
   .main-body {
     width: 100%;
     height: 100%;
+  }
+}
+
+.intro {
+  background-color: #000;
+
+  @include mq($from: tablet) {
+    display: grid;
+    grid-template-areas: 'text image';
+    align-items: start;
+    height: 650px;
+  }
+
+  .intro-image {
+    height: 294px;
+    @include mq($from: tablet) {
+      grid-area: image;
+    }
+  }
+  .intro-text {
+    position: relative;
+    padding: 50px 24px 60px 33px;
+    color: #fff;
+
+    @include mq($from: tablet) {
+      grid-area: text;
+      padding: 145px 54px 333px;
+    }
+
+    @include mq($from: desktop) {
+      padding: 145px 112px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      width: 128px;
+      height: 6px;
+      content: '';
+      background-image: $accent;
+      background-repeat: no-repeat;
+
+      @include mq($from: tablet) {
+        top: 172px;
+        left: 0;
+        width: 6px;
+        height: 304px;
+      }
+    }
+
+    .intro-text-description {
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      color: #fff;
+      opacity: 0.6;
+
+      @include mq($from: tablet) {
+        margin-bottom: 32px;
+      }
+    }
   }
 }

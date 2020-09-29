@@ -1,27 +1,28 @@
 $opacity: 0.8;
 
 .home {
+  z-index: 1;
   width: 100%;
   height: 8000px;
-  background-image: linear-gradient(rgba(#fff, $opacity), rgba(#fff, $opacity)),
-    url('~@/assets/images/design/Mobile - Home.jpg');
-  background-repeat: no-repeat;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8000px;
+    content: '';
+    background-image: url('~@/assets/images/design/Mobile - Home.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    // opacity: 0;
 
-  @include mq($from: tablet) {
-    background-image: linear-gradient(
-        rgba(#fff, $opacity),
-        rgba(#fff, $opacity)
-      ),
-      url('~@/assets/images/design/Tablet - Home.jpg');
-    background-repeat: no-repeat;
-  }
-  @include mq($from: desktop) {
-    background-image: linear-gradient(
-        rgba(#fff, $opacity),
-        rgba(#fff, $opacity)
-      ),
-      url('~@/assets/images/design/Desktop - Home.jpg');
-    background-repeat: no-repeat;
-    // background-size: cover;
+    @include mq($from: tablet) {
+      background-image: url('~@/assets/images/design/Tablet - Home.jpg');
+      background-repeat: no-repeat;
+    }
+    @include mq($from: desktop) {
+      background-image: url('~@/assets/images/design/Desktop - Home.jpg');
+      background-repeat: no-repeat;
+    }
   }
 }

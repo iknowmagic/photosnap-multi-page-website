@@ -26,6 +26,19 @@ a {
 
 h1,
 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  letter-spacing: 3.33333px;
+
+  @include mq($from: tablet) {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 4.16667px;
+  }
 }
 h3 {
 }

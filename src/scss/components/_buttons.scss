@@ -1,5 +1,11 @@
 .btn {
-  transition: all 0.25 ease;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  transition: all 0.25s ease;
 }
 
 .button-1 {
@@ -46,8 +52,21 @@
 .button-4 {
   @extend .btn;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 12px 0;
   color: #fff;
   background-color: transparent;
+
+  &::after {
+    width: 43px;
+    height: 14px;
+    margin-left: 16px;
+    content: '';
+    background-image: url('~@/assets/images/shared/desktop/arrow.svg');
+    filter: invert(1);
+    background-repeat: no-repeat;
+  }
 
   &:hover {
     color: #fff;
