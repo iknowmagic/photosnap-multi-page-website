@@ -40,6 +40,7 @@ $mobile-menu-pos: 72px;
   z-index: 9;
   width: 100%;
   height: 253px;
+  padding: 32px;
   background-color: #fff;
 }
 
@@ -50,6 +51,18 @@ $mobile-menu-pos: 72px;
   width: 100%;
   height: 100%;
   background-color: rgba(#000, 0.5);
+}
+
+.mobile-menu-links {
+  display: grid;
+  row-gap: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background-color: rgba(#000, 0.25);
 }
 
 // https://vuejs.org/v2/guide/transitions.html

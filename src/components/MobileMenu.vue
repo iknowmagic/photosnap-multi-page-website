@@ -8,7 +8,15 @@
       ></div>
     </transition>
     <transition name="mobile-menu-transition">
-      <div v-if="openMenu" class="mobile-menu"></div>
+      <div v-if="openMenu" class="mobile-menu">
+        <div class="mobile-menu-links">
+          <router-link :to="{ name: 'Stories' }">Stories</router-link>
+          <router-link :to="{ name: 'Features' }">Features</router-link>
+          <router-link :to="{ name: 'Pricing' }">Pricing</router-link>
+        </div>
+        <div class="line"></div>
+        <button class="button-1 button-full">Get an Invite</button>
+      </div>
     </transition>
   </div>
 </template>
