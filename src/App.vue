@@ -5,7 +5,10 @@
         <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
       </div>
       <div v-if="$mq === 'mobile'" class="main-nav-right">
-        <img src="@/assets/images/shared/mobile/menu.svg" alt="mobile menu" />
+        <div
+          :class="['mobile-menu-trigger', { active: openMenu }]"
+          @click="openMenu = !openMenu"
+        ></div>
       </div>
       <div v-if="$mq !== 'mobile'" class="main-nav-center">
         <span class="menu-item">Stories</span>
@@ -29,10 +32,14 @@
 <script>
 // @flow
 
-// import MobileMenu from '@/components/MobileMenu'
+import MobileMenu from '@/components/MobileMenu'
+import { sync } from 'vuex-pathify'
 
 export default {
-  name: 'App'
-  // components: { MobileMenu }
+  name: 'App',
+  components: { MobileMenu },
+  computed: {
+    openMenu: sync('mobileMenu/openMenu')
+  }
 }
 </script>
