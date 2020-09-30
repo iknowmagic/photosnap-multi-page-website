@@ -30,8 +30,9 @@
   @include mq($from: tablet) {
     display: grid;
     grid-template-areas: 'image info';
+    grid-template-rows: 600px;
     height: 600px;
-    padding-top: 1px;
+    // padding-top: 1px;
 
     &.invert {
       grid-template-areas: 'info image';
@@ -39,12 +40,16 @@
     .view-the-stories-text {
       justify-content: center;
       height: unset;
-      padding: 0 60px 0 55px;
+      padding: 10px 60px 0 55px;
       margin: 0;
 
       h2 {
         padding: 0 40px 0 0;
       }
+    }
+    .view-the-stories-info {
+      margin-top: -10px;
+      margin-bottom: 4px;
     }
     .view-the-stories-image {
       height: unset;
@@ -52,6 +57,12 @@
     button {
       width: 320px;
       margin-top: 32px;
+    }
+  }
+
+  @include mq($from: desktop) {
+    .view-the-stories-text {
+      padding: 8px 112px 0 112px;
     }
   }
 }

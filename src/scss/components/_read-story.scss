@@ -33,4 +33,7 @@
       padding: 363px 43px 0 42px;
     }
   }
+  @include mq($from: desktop) {
+    grid-template-columns: 360px 360px 360px 360px;
+  }
 }
