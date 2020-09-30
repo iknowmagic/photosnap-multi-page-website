@@ -1,5 +1,5 @@
 <template>
-  <div class="view-the-stories-box">
+  <div :class="['view-the-stories-box', { invert }]">
     <div class="view-the-stories-image">
       <slot name="image" />
     </div>
@@ -19,6 +19,12 @@
 // @flow
 
 export default {
-  name: 'ViewTheStoriesBox'
+  name: 'ViewTheStoriesBox',
+  props: {
+    invert: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>

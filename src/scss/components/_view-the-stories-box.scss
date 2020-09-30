@@ -2,6 +2,14 @@
 }
 
 .view-the-stories-box {
+  @include mq($from: tablet) {
+    display: grid;
+    grid-template-areas: 'image info';
+
+    &.invert {
+      grid-template-areas: 'info image';
+    }
+  }
 }
 
 .view-the-stories-image {

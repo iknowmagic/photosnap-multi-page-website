@@ -31,7 +31,7 @@
           Then share your story with everyone.
         </template>
       </view-the-stories-box>
-      <view-the-stories-box>
+      <view-the-stories-box :invert="true">
         <template v-slot:image>
           <img
             :src="
