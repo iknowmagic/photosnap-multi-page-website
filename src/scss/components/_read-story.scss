@@ -21,3 +21,15 @@
     filter: invert(1);
   }
 }
+.read-story-container {
+  @include mq($from: tablet) {
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 389px 389px;
+
+    .read-story {
+      height: unset;
+      padding: 363px 43px 0 42px;
+    }
+  }
+}
