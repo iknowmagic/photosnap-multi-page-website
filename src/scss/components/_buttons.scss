@@ -2,6 +2,7 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
   border: none;
@@ -25,8 +26,21 @@
 .button-2 {
   @extend .btn;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 12px 0;
   color: #000;
   background-color: transparent;
+
+  &::after {
+    justify-self: end;
+    width: 43px;
+    height: 14px;
+    margin-left: 1px;
+    content: '';
+    background-image: url('~@/assets/images/shared/desktop/arrow.svg');
+    background-repeat: no-repeat;
+  }
 
   &:hover {
     color: #000;
@@ -59,6 +73,7 @@
   background-color: transparent;
 
   &::after {
+    justify-self: end;
     width: 43px;
     height: 14px;
     margin-left: 16px;
@@ -83,4 +98,12 @@
   line-height: 20px;
   text-align: center;
   letter-spacing: 2.5px;
+}
+.button-wide {
+  width: 100%;
+}
+.button-arrow-start {
+  &::after {
+    justify-self: start;
+  }
 }

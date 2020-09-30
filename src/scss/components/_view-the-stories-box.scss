@@ -1,0 +1,33 @@
+.view-the-stories-container {
+}
+
+.view-the-stories-box {
+}
+
+.view-the-stories-image {
+  grid-area: image;
+}
+
+.view-the-stories-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: info;
+  height: 410px;
+  padding: 0 20px 0 33px;
+  h2 {
+    padding: 0 45px 0 0;
+    margin-top: auto;
+  }
+  .view-the-stories-info {
+    margin-top: -5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+  button {
+    // padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
+}
