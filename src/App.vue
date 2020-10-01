@@ -30,6 +30,42 @@
           <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
         </div>
       </div>
+      <div class="footer-social">
+        <a href="#">
+          <img
+            src="@/assets/images/shared/desktop/facebook.svg"
+            alt="facebook"
+          />
+        </a>
+        <a href="#">
+          <img src="@/assets/images/shared/desktop/youtube.svg" alt="youtube" />
+        </a>
+        <a href="#">
+          <img src="@/assets/images/shared/desktop/twitter.svg" alt="twitter" />
+        </a>
+        <a href="#">
+          <img
+            src="@/assets/images/shared/desktop/pinterest.svg"
+            alt="pinterest"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="@/assets/images/shared/desktop/instagram.svg"
+            alt="instagram"
+          />
+        </a>
+      </div>
+      <div class="footer-links">
+        <router-link :to="{ name: 'Home' }">Home</router-link>
+        <router-link :to="{ name: 'Stories' }">Stories</router-link>
+        <router-link :to="{ name: 'Features' }">Features</router-link>
+        <router-link :to="{ name: 'Pricing' }">Pricing</router-link>
+      </div>
+      <div class="footer-button">
+        <button class="button-4 button-arrow-start">Get an Invite</button>
+      </div>
+      <div class="footer-copy">Copyright 2019. All Rights Reserved.</div>
     </div>
 
     <mobile-menu />
