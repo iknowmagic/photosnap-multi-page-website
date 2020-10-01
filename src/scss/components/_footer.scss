@@ -2,6 +2,7 @@
   padding: 56px 0;
   text-align: center;
   background-color: #000;
+
   .logo {
     position: relative;
     width: 100%;
@@ -62,5 +63,38 @@
     margin-top: 19px;
     color: #fff;
     text-align: center;
+    opacity: 0.5;
+  }
+
+  @include mq($from: tablet) {
+    position: relative;
+    padding: 63px 38px 63px 36px;
+
+    .logo {
+      width: 176px;
+    }
+    .footer-social {
+      justify-content: start;
+      margin-top: 120px;
+      margin-left: 3px;
+    }
+    .footer-links {
+      display: flex;
+      margin-top: -113px;
+      margin-left: 3px;
+      a + a {
+        margin-left: 25px;
+      }
+    }
+    .footer-button {
+      position: absolute;
+      top: 51px;
+      right: -12px;
+      margin: 0;
+    }
+    .footer-copy {
+      margin-top: 70px;
+      text-align: right;
+    }
   }
 }
