@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 56px 0;
+  padding: 56px 0 54px;
   text-align: center;
   background-color: #000;
 
@@ -68,20 +68,22 @@
 
   @include mq($from: tablet) {
     position: relative;
-    padding: 63px 38px 63px 36px;
+    padding: 63px 38px 43px 36px;
 
     .logo {
       width: 176px;
     }
     .footer-social {
+      position: relative;
+      top: 88px;
+      left: 3px;
       justify-content: start;
-      margin-top: 120px;
-      margin-left: 3px;
     }
     .footer-links {
+      position: relative;
+      top: -70px;
+      left: 3px;
       display: flex;
-      margin-top: -113px;
-      margin-left: 3px;
       a + a {
         margin-left: 25px;
       }
@@ -89,12 +91,57 @@
     .footer-button {
       position: absolute;
       top: 51px;
-      right: -12px;
+      right: 39px;
       margin: 0;
+      button {
+        grid-template-columns: 1fr 43px;
+        width: 167px;
+
+        &::after {
+          margin-left: 0;
+        }
+      }
     }
     .footer-copy {
-      margin-top: 70px;
+      position: relative;
+      top: -18px;
       text-align: right;
+    }
+  }
+
+  @include mq($from: desktop) {
+    padding: 62px 162px 141px 167px;
+
+    .footer-social {
+      position: absolute;
+      top: 131px;
+      left: 171px;
+    }
+    .footer-copy {
+      top: -157px;
+    }
+    .footer-links {
+      position: absolute;
+      top: 18px;
+      left: 450px;
+      display: grid;
+      width: 150px;
+
+      a {
+        text-align: left;
+      }
+      a + a {
+        margin-left: 0;
+      }
+    }
+    .footer-button {
+      position: absolute;
+      top: 50px;
+      right: 164px;
+      margin: 0;
+    }
+    .logo {
+      position: absolute;
     }
   }
 }
