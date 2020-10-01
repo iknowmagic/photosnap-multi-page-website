@@ -1,0 +1,13 @@
+.bottom-info {
+  padding: 80px 33px 43px;
+
+  @include mq($from: tablet) {
+    padding: 120px 33px;
+  }
+  @include mq($from: desktop) {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 30px;
+    padding: 120px 164px;
+  }
+}

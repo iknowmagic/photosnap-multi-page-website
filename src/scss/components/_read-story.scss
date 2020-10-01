@@ -34,6 +34,7 @@
     }
   }
   @include mq($from: desktop) {
+    grid-template-rows: 500px;
     grid-template-columns: 360px 360px 360px 360px;
   }
 }

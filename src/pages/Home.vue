@@ -70,6 +70,21 @@
         image="architecturals.jpg"
       />
     </div>
+
+    <div class="bottom-info">
+      <feature-box title="100% Responsive" image="responsive.svg">
+        No matter which the device you’re on, our site is fully responsive and
+        stories look beautiful on any screen.
+      </feature-box>
+      <feature-box title="No Photo Upload Limit" image="no-limit.svg">
+        Our tool has no limits on uploads or bandwidth. Freely upload in bulk
+        and share all of your stories in one go.
+      </feature-box>
+      <feature-box title="Available to Embed" image="embed.svg">
+        Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos,
+        Google Maps, and more.
+      </feature-box>
+    </div>
   </div>
 </template>
 
@@ -78,12 +93,14 @@
 
 import ViewTheStoriesBox from '@/components/ViewTheStoriesBox'
 import ReadStory from '@/components/ReadStory'
+import FeatureBox from '@/components/FeatureBox'
 
 export default {
   name: 'Home',
   components: {
     ViewTheStoriesBox,
-    ReadStory
+    ReadStory,
+    FeatureBox
   },
   methods: {
     getImage(image: string) {

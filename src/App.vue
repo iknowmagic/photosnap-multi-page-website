@@ -23,7 +23,14 @@
       <router-view />
     </div>
 
-    <div class="main-footer"></div>
+    <div class="main-footer">
+      <div class="logo">
+        <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
+        <div class="logo-filtered">
+          <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
+        </div>
+      </div>
+    </div>
 
     <mobile-menu />
   </div>

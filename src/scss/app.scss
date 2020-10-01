@@ -5,13 +5,6 @@
 @import './base/text-fonts';
 @import './base/base';
 
-// @import './components/main';
-// @import './components/intro';
-// @import './components/home';
-// @import './components/get-started';
-// @import './components/buttons';
-// @import './components/footer';
-// @import './components/mobile-menu';
-// @import './components/about';
-
 @import './components/**/*.scss';
+
+@import './development/**/*.scss';
