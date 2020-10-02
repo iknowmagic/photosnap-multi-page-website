@@ -27,6 +27,35 @@ body {
     }
   }
 }
+
+.stories {
+  width: 100%;
+  height: 8000px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // display: none;
+    width: 100%;
+    height: 8000px;
+    content: '';
+    background-image: url('~@/assets/images/design/Mobile - Stories.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    // opacity: 0;
+
+    @include mq($from: tablet) {
+      background-image: url('~@/assets/images/design/Tablet - Stories.jpg');
+      background-repeat: no-repeat;
+    }
+    @include mq($from: desktop) {
+      background-image: url('~@/assets/images/design/Desktop - Stories.jpg');
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .main-container {
   .main-footer {
     background-color: rgba(#000, 0.4);

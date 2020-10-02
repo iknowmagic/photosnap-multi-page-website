@@ -1,12 +1,17 @@
 .stories {
-  width: 100%;
-  height: 8000px;
-  background: url('~@/assets/images/design/Mobile - Stories.jpg') no-repeat;
+  .intro {
+    .intro-image {
+      height: 317px;
+    }
+    .intro-text {
+      padding: 46px 28px 36px 29px;
+      &::before {
+        background: none;
+      }
 
-  @include mq($from: tablet) {
-    background: url('~@/assets/images/design/Tablet - Stories.jpg') no-repeat;
-  }
-  @include mq($from: desktop) {
-    background: url('~@/assets/images/design/Desktop - Stories.jpg') no-repeat;
+      .featured-author {
+        margin-top: -5px;
+      }
+    }
   }
 }

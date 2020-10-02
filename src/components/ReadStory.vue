@@ -1,5 +1,9 @@
 <template>
-  <div class="read-story" :style="`background-image: url(${currImage})`">
+  <div
+    :class="['read-story', { 'has-date': !!date }]"
+    :style="`background-image: url(${currImage})`"
+  >
+    <div v-if="date" class="read-story-date">{{ date }}</div>
     <div class="read-story-title">
       {{ title }}
     </div>
@@ -26,6 +30,10 @@ export default {
       default: undefined
     },
     image: {
+      type: String,
+      default: undefined
+    },
+    date: {
       type: String,
       default: undefined
     }
