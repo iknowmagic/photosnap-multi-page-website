@@ -91,6 +91,8 @@
     }
     @include mq($from: tablet) {
       grid-area: image;
+      width: 273px;
+      height: 650px;
     }
   }
   .intro-text {
