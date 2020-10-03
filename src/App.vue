@@ -32,7 +32,7 @@
     </div>
 
     <div class="main-footer">
-      <div class="logo">
+      <div class="footer-logo">
         <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
         <div class="logo-filtered">
           <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />

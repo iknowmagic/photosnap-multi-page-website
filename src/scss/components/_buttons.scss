@@ -28,7 +28,7 @@
   @extend .btn;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 43px;
   padding: 12px 0;
   color: #000;
   background-color: transparent;
@@ -69,7 +69,7 @@
   @extend .btn;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 43px;
   padding: 12px 0;
   color: #fff;
   background-color: transparent;
