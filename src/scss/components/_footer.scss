@@ -16,9 +16,6 @@
   .footer-logo {
     position: relative;
     grid-area: block1;
-    // grid-row: 1/5;
-    // grid-column: 1/1;
-
     justify-self: center;
     width: 170px;
     height: 16px;
@@ -129,6 +126,24 @@
     }
     .footer-copy {
       justify-self: end;
+    }
+  }
+  @include mq($from: desktop) {
+    grid-template-areas:
+      'block1  block3 block4'
+      '.       block3      .'
+      'block2  block3 block5';
+    grid-template-rows: 40px 71px 25px;
+    grid-template-columns: 278px 150px 677px;
+    padding: 51px 162px 62px 171px;
+
+    .footer-links {
+      display: grid;
+      margin: 0;
+
+      > a + a {
+        margin-left: 0;
+      }
     }
   }
 }

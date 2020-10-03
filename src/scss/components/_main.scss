@@ -94,6 +94,9 @@
       width: 273px;
       height: 650px;
     }
+    @include mq($from: desktop) {
+      width: 830px;
+    }
   }
   .intro-text {
     position: relative;
