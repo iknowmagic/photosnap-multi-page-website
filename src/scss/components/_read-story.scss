@@ -37,6 +37,8 @@
     display: grid;
     grid-template-rows: 500px 500px;
     grid-template-columns: 389px 379px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 
     .read-story {
       width: unset;

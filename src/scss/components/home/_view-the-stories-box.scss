@@ -1,5 +1,8 @@
 .view-the-stories-image {
   grid-area: image;
+  img {
+    width: 100%;
+  }
 }
 
 .view-the-stories-text {
@@ -54,6 +57,9 @@
     }
     .view-the-stories-image {
       height: unset;
+      img {
+        width: unset;
+      }
     }
     button {
       // width: 320px;
