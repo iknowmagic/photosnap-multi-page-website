@@ -1,11 +1,11 @@
 <template>
   <div class="stories">
     <div class="intro">
-      <div class="intro-image">
-        <img
-          :src="require(`@/assets/images/stories/${$mq}/moon-of-appalacia.jpg`)"
+      <div class="intro-image" :style="imgStyle">
+        <!-- <img
+          :src="require()"
           alt="create and share"
-        />
+        /> -->
       </div>
       <div class="intro-text">
         <div class="featured-date-text">Last month's featured story</div>
@@ -133,6 +133,23 @@ export default {
   name: 'Stories',
   components: {
     ReadStory
+  },
+  computed: {
+    introImage() {
+      let result
+      try {
+        result = require(`@/assets/images/stories/${this.$mq}/moon-of-appalacia.jpg`)
+      } catch {
+        result = require(`@/assets/images/stories/desktop/moon-of-appalacia.jpg`)
+      }
+
+      return result
+    },
+    imgStyle() {
+      return {
+        'background-image': `url(${this.introImage})`
+      }
+    }
   }
 }
 </script>

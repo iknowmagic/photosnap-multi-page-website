@@ -17,29 +17,32 @@ module.exports = {
             filename: 'js/[name].[contenthash:8].js',
             chunkFilename: 'js/chunk-[contenthash:8].js'
           }
-        : {},
+        : undefined,
 
-    optimization: {
-      minimize: true,
-      minimizer: [
-        new TerserPlugin({
-          terserOptions: {
-            ecma: undefined,
-            warnings: true,
-            parse: {},
-            compress: { drop_console: true },
-            mangle: true,
-            output: { comments: false },
-            toplevel: false,
-            nameCache: null,
-            ie8: false,
-            keep_classnames: undefined,
-            keep_fnames: false,
-            safari10: false
+    optimization:
+      process.env.NODE_ENV === 'production'
+        ? {
+            minimize: true,
+            minimizer: [
+              new TerserPlugin({
+                terserOptions: {
+                  ecma: undefined,
+                  warnings: true,
+                  parse: {},
+                  compress: { drop_console: true },
+                  mangle: true,
+                  output: { comments: false },
+                  toplevel: false,
+                  nameCache: null,
+                  ie8: false,
+                  keep_classnames: undefined,
+                  keep_fnames: false,
+                  safari10: false
+                }
+              })
+            ]
           }
-        })
-      ]
-    }
+        : undefined
   },
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
@@ -62,10 +65,13 @@ module.exports = {
   },
   css: {
     sourceMap: process.env.NODE_ENV !== 'production',
-    extract: {
-      filename: 'css/[name].[contenthash:8].css',
-      chunkFilename: 'css/chunk-[contenthash:8].css'
-    },
+    extract:
+      process.env.NODE_ENV === 'production'
+        ? {
+            filename: 'css/[name].[contenthash:8].css',
+            chunkFilename: 'css/chunk-[contenthash:8].css'
+          }
+        : undefined,
     loaderOptions: {
       scss: {
         sassOptions: {

@@ -1,12 +1,7 @@
 <template>
   <div class="home">
     <div class="intro">
-      <div class="intro-image">
-        <img
-          :src="require(`@/assets/images/home/${$mq}/create-and-share.jpg`)"
-          alt="create and share"
-        />
-      </div>
+      <div class="intro-image" :style="imgStyle"></div>
       <div class="intro-text">
         <h1>Create and share your photo stories.</h1>
         <div class="intro-text-description">
@@ -17,13 +12,7 @@
       </div>
     </div>
     <div class="view-the-stories-container">
-      <view-the-stories-box>
-        <template v-slot:image>
-          <img
-            :src="require(`@/assets/images/home/${$mq}/beautiful-stories.jpg`)"
-            alt="beautiful storie"
-          />
-        </template>
+      <view-the-stories-box image="beautiful-stories.jpg">
         <template v-slot:title>Beautiful Stories Every Time</template>
         <template v-slot:info>
           We provide design templates to ensure your stories look terrific.
@@ -31,15 +20,7 @@
           Then share your story with everyone.
         </template>
       </view-the-stories-box>
-      <view-the-stories-box :invert="true">
-        <template v-slot:image>
-          <img
-            :src="
-              require(`@/assets/images/home/${$mq}/designed-for-everyone.jpg`)
-            "
-            alt="beautiful storie"
-          />
-        </template>
+      <view-the-stories-box :invert="true" image="designed-for-everyone.jpg">
         <template v-slot:title>Designed for Everyone</template>
         <template v-slot:info>
           Photosnap can help you create stories that resonate with your
@@ -101,6 +82,23 @@ export default {
     ViewTheStoriesBox,
     ReadStory,
     FeatureBox
+  },
+  computed: {
+    introImage() {
+      let result
+      try {
+        result = require(`@/assets/images/home/${this.$mq}/create-and-share.jpg`)
+      } catch {
+        result = require(`@/assets/images/home/desktop/create-and-share.jpg`)
+      }
+
+      return result
+    },
+    imgStyle() {
+      return {
+        'background-image': `url(${this.introImage})`
+      }
+    }
   },
   methods: {
     getImage(image: string) {

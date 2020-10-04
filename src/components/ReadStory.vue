@@ -1,17 +1,16 @@
 <template>
-  <div
-    :class="['read-story', { 'has-date': !!date }]"
-    :style="`background-image: url(${currImage})`"
-  >
-    <div v-if="date" class="read-story-date">{{ date }}</div>
-    <div class="read-story-title">
-      {{ title }}
+  <div :class="['read-story', { 'has-date': !!date }]" :style="imageStyle">
+    <div class="read-story-text">
+      <div v-if="date" class="read-story-date">{{ date }}</div>
+      <div class="read-story-title">
+        {{ title }}
+      </div>
+      <div class="read-story-author">by {{ author }}</div>
+
+      <div class="line"></div>
+
+      <button class="button-4 button-wide">Read Story</button>
     </div>
-    <div class="read-story-author">by {{ author }}</div>
-
-    <div class="line"></div>
-
-    <button class="button-4 button-wide">Read Story</button>
   </div>
 </template>
 
@@ -48,6 +47,13 @@ export default {
       }
 
       return result
+    },
+    imageStyle() {
+      return `
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(${this.currImage});
+      background-size: 100% 350px, 100%;
+      background-position: bottom, top;
+      `
     }
   }
 }

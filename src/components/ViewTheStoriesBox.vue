@@ -1,8 +1,6 @@
 <template>
   <div :class="['view-the-stories-box', { invert }]">
-    <div class="view-the-stories-image">
-      <slot name="image" />
-    </div>
+    <div class="view-the-stories-image" :style="imgStyle"></div>
     <div class="view-the-stories-text">
       <h2>
         <slot name="title" />
@@ -18,12 +16,41 @@
 <script>
 // @flow
 
+// <template v-slot:image>
+//           <img
+//             :src="require(`@/assets/images/home/${$mq}/beautiful-stories.jpg`)"
+//             alt="beautiful storie"
+//           />
+//         </template>
+
 export default {
   name: 'ViewTheStoriesBox',
   props: {
     invert: {
       type: Boolean,
       default: false
+    },
+    image: {
+      type: String,
+      default: undefined,
+      required: true
+    }
+  },
+  computed: {
+    storyImage() {
+      let result
+      try {
+        result = require(`@/assets/images/home/${this.$mq}/${this.image}`)
+      } catch {
+        result = require(`@/assets/images/home/desktop/${this.image}`)
+      }
+
+      return result
+    },
+    imgStyle() {
+      return {
+        'background-image': `url(${this.storyImage})`
+      }
     }
   }
 }

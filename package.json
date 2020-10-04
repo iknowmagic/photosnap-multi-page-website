@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve-watch": "yarn install && nodemon -w vue.config.js --exec vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "yarn test:unit --detectOpenHandles --watchAll",
     "test:unit": "vue-cli-service test:unit",
@@ -49,6 +50,7 @@
     "flow-bin": "^0.134.0",
     "jest-image-snapshot": "^4.2.0",
     "node-sass-glob-importer": "^5.3.2",
+    "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
     "puppeteer": "^5.2.1",
     "sass": "^1.26.10",

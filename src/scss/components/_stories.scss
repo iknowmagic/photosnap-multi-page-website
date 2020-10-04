@@ -1,7 +1,9 @@
 .stories {
   .intro {
     .intro-image {
+      width: 100%;
       height: 317px;
+      background-size: cover;
     }
     .intro-text {
       padding: 46px 28px 36px 29px;
@@ -18,8 +20,9 @@
   @include mq($from: tablet) {
     .intro {
       grid-template-areas: unset;
+
       .intro-image {
-        width: 768px;
+        width: 100%;
         height: 650px;
       }
       .intro-text {
@@ -41,6 +44,23 @@
       .read-story {
         height: 500px;
         padding: 341px 41px 0 42px;
+      }
+    }
+  }
+  @include mq($from: desktop) {
+    .intro {
+      grid-template-areas: 'text image';
+      grid-template-columns: 0;
+      .intro-text {
+        width: 500px;
+        padding: 121px 0 0 112px;
+      }
+      .intro-image {
+      }
+    }
+    .stories-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .read-story {
       }
     }
   }
