@@ -19,13 +19,13 @@
 
   @include mq($from: tablet) {
     .intro {
-      grid-template-areas: unset;
-
+      grid-template-columns: 0;
       .intro-image {
         width: 100%;
         height: 650px;
       }
       .intro-text {
+        width: 760px;
         padding: 121px 335px 36px 39px;
         .featured-author {
           margin-top: -13px;
@@ -43,7 +43,7 @@
 
       .read-story {
         height: 500px;
-        padding: 341px 41px 0 42px;
+        padding: 340px 41px 0 41px;
       }
     }
   }
