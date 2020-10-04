@@ -14,4 +14,34 @@
       }
     }
   }
+
+  @include mq($from: tablet) {
+    .intro {
+      grid-template-areas: unset;
+      .intro-image {
+        width: 768px;
+        height: 650px;
+      }
+      .intro-text {
+        padding: 121px 335px 36px 39px;
+        .featured-author {
+          margin-top: -13px;
+        }
+        .intro-text-description {
+          margin-bottom: 11px;
+        }
+      }
+    }
+
+    .stories-container {
+      display: grid;
+      // grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+
+      .read-story {
+        height: 500px;
+        padding: 341px 41px 0 42px;
+      }
+    }
+  }
 }

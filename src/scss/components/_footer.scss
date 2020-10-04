@@ -96,9 +96,10 @@
       'block1 block4'
       'block3 .'
       'block2 block5';
-    grid-template-rows: 48px 104px 30px;
+    grid-template-rows: 46px 104px 30px;
+    grid-template-columns: 393px 298px;
     justify-content: center;
-    padding: 47px 38px 54px 39px;
+    padding: 49px 38px 54px 39px;
 
     .footer-logo {
       align-self: center;
