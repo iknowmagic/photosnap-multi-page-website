@@ -1,12 +1,55 @@
 .features {
-  width: 100%;
-  height: 8000px;
-  background: url('~@/assets/images/design/Mobile - Features.jpg') no-repeat;
+  .intro {
+    .intro-text {
+      padding: 51px 24px 57px 29px;
+    }
+  }
+  .bottom-info {
+    padding: 63px 33px 38px;
+
+    .feature-box:nth-child(n + 2) {
+      margin-bottom: 53px;
+    }
+  }
 
   @include mq($from: tablet) {
-    background: url('~@/assets/images/design/Tablet - Features.jpg') no-repeat;
-  }
-  @include mq($from: desktop) {
-    background: url('~@/assets/images/design/Desktop - Features.jpg') no-repeat;
+    .intro {
+      grid-template-columns: 490px auto;
+      height: 490px;
+      .intro-text {
+        height: 100%;
+        padding: 145px 50px 57px 54px;
+
+        &::before {
+          top: 175px;
+          left: 0;
+          width: 6px;
+          height: 143px;
+        }
+      }
+      .intro-image {
+        height: 100%;
+      }
+    }
+    .bottom-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 100px 33px 38px;
+
+      .feature-box {
+        padding: 0 6px;
+
+        &:last-child {
+          margin-top: 0;
+        }
+        &:nth-child(n + 4) {
+          margin-bottom: 75px;
+        }
+
+        .feature-box-image {
+          height: 88px;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,41 @@
+.beta-announcement {
+  position: relative;
+  padding: 40px 0 51px 35px;
+  color: #fff;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    width: 128px;
+    height: 6px;
+    content: '';
+    background-image: $accent;
+    background-repeat: no-repeat;
+  }
+
+  h2 {
+    margin-bottom: 13px;
+  }
+  @include mq($from: tablet) {
+    padding: 34px 280px 55px 40px;
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 6px;
+      // height: 304px;
+      height: 100%;
+    }
+
+    .beta-text {
+      display: grid;
+      grid-template-columns: 400px 276px;
+    }
+    button {
+      align-self: center;
+      justify-self: end;
+      width: 153px;
+      margin-top: 20px;
+    }
+  }
+}
