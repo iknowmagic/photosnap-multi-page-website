@@ -69,11 +69,12 @@
       </div>
     </div>
     <div class="plans-features">
+      <h2>Compare</h2>
       <h3>The Features</h3>
       <table>
         <thead>
           <tr>
-            <th>Features</th>
+            <th>The Features</th>
             <th v-for="(planValue, planKey) in plans" :key="planKey">
               {{ planValue }}
             </th>

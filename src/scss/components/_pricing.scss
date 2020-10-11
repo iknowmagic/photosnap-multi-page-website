@@ -77,6 +77,9 @@
   }
   .plans-features {
     padding: 0 27px 40px;
+    h2 {
+      display: none;
+    }
     h3 {
       padding-bottom: 23px;
       font-size: 12px;
@@ -139,6 +142,163 @@
             }
             &:nth-child(4) {
               grid-column: col3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mq($from: tablet) {
+    .intro {
+      height: 490px;
+      .intro-image {
+        height: 490px;
+      }
+      .intro-text {
+        padding: 146px 60px 50px 54px;
+
+        &::before {
+          top: 173px;
+          left: 0;
+          width: 6px;
+          height: 144px;
+        }
+
+        h1 {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .plans {
+      padding: 106px 40px 0 40px;
+
+      .plan-boxes {
+        .plan-box {
+          display: grid;
+          grid-template-rows:
+            [row1] auto
+            [row2] auto
+            [row3] auto;
+          grid-template-columns:
+            [col1] 1fr
+            [col2] 1fr;
+          padding: 39px 43px 40px 40px;
+
+          &.accent {
+            padding: 39px 43px 40px 40px;
+            &::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 6px;
+              height: 100%;
+              content: '';
+              background-image: $accent;
+              background-size: 6px 100%;
+            }
+          }
+
+          .plan-title {
+            grid-row: row1;
+            grid-column: col1;
+            text-align: left;
+          }
+          .plan-text {
+            grid-row: row2;
+            grid-column: col1;
+            padding-right: 20px;
+            margin: 0;
+            margin-top: -5px;
+            text-align: left;
+          }
+          .plan-button {
+            grid-row: row3;
+            grid-column: col1;
+            margin-top: 30px;
+            text-align: left;
+
+            button {
+              width: 270px;
+            }
+          }
+          .plan-price {
+            grid-row: row1;
+            grid-column: col2;
+            margin: 0;
+            margin-top: 3px;
+            text-align: right;
+          }
+          .plan-frequency {
+            grid-row: row2;
+            grid-column: col2;
+            margin: 0;
+            margin-right: 13px;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .plans-features {
+      padding: 27px 41px 113px 42px;
+
+      h2 {
+        display: block;
+        text-align: center;
+      }
+      h3 {
+        display: none;
+      }
+      table {
+        margin-top: 63px;
+        border-collapse: collapse;
+
+        thead {
+          display: table-header-group;
+          tr {
+            th {
+              width: 140px;
+              padding-bottom: 23px;
+              padding-left: 10px;
+              // width: 100%;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 16px;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              border-bottom: 1px solid #000;
+
+              &:first-child {
+                width: 260px;
+                padding-left: 21px;
+                text-align: left;
+              }
+            }
+          }
+        }
+        tbody {
+          span {
+            display: none;
+          }
+          tr {
+            display: table-row;
+            th,
+            td {
+              padding-top: 20px;
+              padding-bottom: 18px;
+              border-bottom: 1px solid #dfdfdf;
+            }
+            th {
+              position: relative;
+              display: table-cell;
+              padding-left: 21px;
+              text-align: left;
+            }
+            td {
+              position: relative;
+              display: table-cell;
+              padding-left: 10px;
+              text-align: center;
             }
           }
         }
