@@ -59,7 +59,11 @@
     .read-story {
       width: unset;
       height: unset;
-      padding: 364px 43px 0 42px;
+      padding: 362px 43px 0 42px;
+
+      .read-story-title {
+        margin-bottom: 3px;
+      }
     }
   }
   @include mq($from: desktop) {
