@@ -2,7 +2,7 @@
   <div class="main-container">
     <div class="main-header">
       <div class="main-logo">
-        <router-link :to="{ name: 'Home' }">
+        <router-link :to="{ name: 'Home' }" @click.native="openMenu = false">
           <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
         </router-link>
       </div>
