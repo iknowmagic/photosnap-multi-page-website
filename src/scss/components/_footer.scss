@@ -19,14 +19,18 @@
     justify-self: center;
     width: 170px;
     height: 16px;
-
-    > img {
+    a {
       position: absolute;
       top: 0;
       left: 0;
-      width: 170px;
-      clip: rect(0, 170px, 16px, 0);
-      filter: invert(1);
+      > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 170px;
+        clip: rect(0, 170px, 16px, 0);
+        filter: invert(1);
+      }
     }
 
     .logo-filtered {
@@ -51,7 +55,15 @@
     column-gap: 13px;
     justify-self: center;
     height: 20px;
-    filter: brightness(0) invert(1);
+
+    a {
+      filter: brightness(0) invert(1);
+
+      &:hover {
+        filter: none;
+        opacity: 1;
+      }
+    }
   }
   .footer-links {
     display: grid;
@@ -71,6 +83,10 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px;
+
+      &:hover {
+        opacity: 0.3;
+      }
     }
   }
   .footer-button {

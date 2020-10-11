@@ -5,6 +5,7 @@
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
   border: none;
   transition: all 0.25s ease;
 }
@@ -19,7 +20,7 @@
   background-color: #000;
 
   &:hover {
-    color: #fff;
+    color: #000;
     background-color: #dfdfdf;
   }
 }

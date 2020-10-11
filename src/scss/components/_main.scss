@@ -44,6 +44,10 @@
         font-weight: 700;
         line-height: 16px;
         letter-spacing: 2px;
+
+        &:hover {
+          opacity: 0.3;
+        }
       }
 
       a:last-child {

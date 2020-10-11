@@ -33,10 +33,12 @@
 
     <div class="main-footer">
       <div class="footer-logo">
-        <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
-        <div class="logo-filtered">
+        <router-link :to="{ name: 'Home' }">
           <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
-        </div>
+          <div class="logo-filtered">
+            <img src="@/assets/images/shared/desktop/logo.svg" alt="logo" />
+          </div>
+        </router-link>
       </div>
       <div class="footer-social">
         <a href="#">

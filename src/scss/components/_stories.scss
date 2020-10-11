@@ -44,6 +44,10 @@
       .read-story {
         height: 500px;
         padding: 340px 41px 0 41px;
+
+        &:hover {
+          // margin-top: 0;
+        }
       }
     }
   }
