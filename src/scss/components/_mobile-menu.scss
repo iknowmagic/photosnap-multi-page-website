@@ -57,6 +57,12 @@ $mobile-menu-pos: 72px;
 .mobile-menu-links {
   display: grid;
   row-gap: 20px;
+
+  a {
+    &:hover {
+      opacity: 0.3;
+    }
+  }
 }
 
 .line {
