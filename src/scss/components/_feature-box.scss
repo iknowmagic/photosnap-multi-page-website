@@ -27,6 +27,9 @@
       font-weight: 700;
       line-height: 25px;
     }
+    .feature-box-info {
+      opacity: 0.6;
+    }
   }
 
   @include mq($from: tablet) {
