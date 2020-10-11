@@ -131,6 +131,11 @@ import ReadStory from '@/components/ReadStory'
 
 export default {
   name: 'Stories',
+  page() {
+    return {
+      title: 'stories'
+    }
+  },
   components: {
     ReadStory
   },

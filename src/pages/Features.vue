@@ -49,6 +49,11 @@ import BetaAnnouncement from '@/components/BetaAnnouncement'
 
 export default {
   name: 'Features',
+  page() {
+    return {
+      title: 'features'
+    }
+  },
   components: {
     FeatureBox,
     BetaAnnouncement

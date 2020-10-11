@@ -90,9 +90,26 @@ import { sync } from 'vuex-pathify'
 
 export default {
   name: 'App',
+  page() {
+    // https://vue-meta.nuxtjs.org/guide/caveats.html#reactive-variables-in-template-functions
+    const appName = this.appName
+    return {
+      title: '',
+      titleTemplate: (titleChunk: string) => {
+        return titleChunk
+          ? `${titleChunk} ${appName ? ' | ' + appName : ''}`
+          : appName
+      }
+    }
+  },
   components: { MobileMenu },
   computed: {
     openMenu: sync('mobileMenu/openMenu')
+  },
+  data() {
+    return {
+      appName: 'photosnap'
+    }
   }
 }
 </script>

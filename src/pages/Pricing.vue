@@ -107,6 +107,11 @@ import BetaAnnouncement from '@/components/BetaAnnouncement'
 
 export default {
   name: 'Pricing',
+  page() {
+    return {
+      title: 'pricing'
+    }
+  },
   components: {
     Toggle,
     BetaAnnouncement
