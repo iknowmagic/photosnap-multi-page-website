@@ -103,13 +103,13 @@ export default {
     }
   },
   components: { MobileMenu },
-  computed: {
-    openMenu: sync('mobileMenu/openMenu')
-  },
   data() {
     return {
       appName: 'photosnap'
     }
+  },
+  computed: {
+    openMenu: sync('mobileMenu/openMenu')
   }
 }
 </script>
