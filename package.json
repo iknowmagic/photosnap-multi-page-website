@@ -20,6 +20,7 @@
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "sass-mq": "^5.0.1",
+    "uniqid": "^5.2.0",
     "vue": "^2.6.12",
     "vue-meta": "^2.4.0",
     "vue-mq": "^1.0.1",
