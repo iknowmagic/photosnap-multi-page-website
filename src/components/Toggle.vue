@@ -1,6 +1,6 @@
 <template>
   <div class="toggle">
-    <div :class="['switch-text', { active: !checked }]">Monthly</div>
+    <div :class="['switch-text', { active: !currActive }]">Monthly</div>
     <div class="switch">
       <input :id="id" v-model="currActive" type="checkbox" />
       <label :for="id"></label>
