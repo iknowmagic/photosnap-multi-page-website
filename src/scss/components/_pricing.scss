@@ -305,4 +305,121 @@
       }
     }
   }
+  @include mq($from: desktop) {
+    .intro {
+      .intro-text {
+        padding: 146px 110px 50px 112px;
+
+        h1 {
+          margin-bottom: 22px;
+        }
+      }
+    }
+    .plans {
+      padding: 114px 40px 0 40px;
+
+      .plans-switcher {
+        margin-left: -19px;
+      }
+      .plan-boxes {
+        grid-template-columns: 350px 350px 350px;
+        column-gap: 30px;
+        margin-top: 40px;
+
+        .plan-box {
+          display: block;
+          height: 407px;
+          padding: 56px 43px 39px 40px;
+          margin-top: 32px;
+
+          &.accent {
+            position: relative;
+            height: 470px;
+            padding: 88px 35px 70px;
+            margin-top: 0;
+            color: #fff;
+            background-color: #000;
+            &::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 6px;
+              content: '';
+              background-image: $accent;
+              background-size: 100% 6px;
+            }
+          }
+
+          .plan-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 25px;
+            text-align: center;
+          }
+          .plan-text {
+            padding: 0;
+            margin-top: 19px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
+            opacity: 0.6;
+          }
+          .plan-price {
+            margin-top: 37px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 4.17px;
+          }
+          .plan-frequency {
+            margin: 0;
+            margin-top: 2px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
+          }
+          .plan-button {
+            margin-top: 40px;
+            text-align: center;
+            button {
+              width: 270px;
+            }
+          }
+        }
+      }
+    }
+    .plans-features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 75px 41px 162px 42px;
+      table {
+        width: 731px;
+        margin-top: 21px;
+
+        thead {
+          tr {
+            th:first-child {
+              padding-left: 24px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            th {
+              width: 305px;
+              padding-left: 24px;
+            }
+            td {
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
