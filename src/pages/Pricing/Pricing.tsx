@@ -79,7 +79,7 @@ export default function Pricing() {
         <div className="md:gap-x-8 lg:gap-x-8 space-y-6 md:space-y-0 md:grid md:grid-cols-3">
           {/* Basic Plan */}
           <div className="md:flex md:flex-col bg-[#f5f5f5] px-6 md:px-10 py-14 md:py-10 lg:py-14 text-center">
-            <h2 className="font-bold text-2xl">Basic</h2>
+            <h2 className="font-bold md:text-3xl! lg:text-4xl!">Basic</h2>
             <p className="opacity-60 mt-5 md:mt-0 md:text-left">
               Includes basic usage of our platform. Recommended for new and
               aspiring photographers.
@@ -100,7 +100,7 @@ export default function Pricing() {
             {/* Accent bar on top */}
             <div className="top-0 md:top-0 left-0 md:left-0 absolute bg-gradient-to-r md:bg-gradient-to-b from-[#ffc593] via-[#bc7198] to-[#5a77ff] w-full md:w-1.5 h-1.5 md:h-full"></div>
 
-            <h2 className="font-bold text-2xl">Pro</h2>
+            <h2 className="font-bold md:text-3xl! lg:text-4xl!">Pro</h2>
             <p className="opacity-60 mt-5 md:mt-0 md:text-left">
               More advanced features available. Recommended for photography
               veterans and professionals.
@@ -118,7 +118,7 @@ export default function Pricing() {
 
           {/* Business Plan */}
           <div className="md:flex md:flex-col bg-[#f5f5f5] px-6 md:px-10 py-14 md:py-10 lg:py-14 text-center">
-            <h2 className="font-bold text-2xl">Business</h2>
+            <h2 className="font-bold md:text-3xl! lg:text-4xl!">Business</h2>
             <p className="opacity-60 mt-5 md:mt-0 md:text-left">
               Additional features available such as more detailed metrics.
               Recommended for business owners.
