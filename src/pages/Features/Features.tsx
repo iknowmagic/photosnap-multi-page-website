@@ -26,6 +26,8 @@ export default function Features() {
           style={{
             backgroundImage: `url('/assets/images/features/desktop/hero.jpg')`,
           }}
+          role="img"
+          aria-label="Camera on tripod"
         ></div>
       </section>
 

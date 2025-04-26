@@ -33,12 +33,12 @@ export default function StoryCard({
 
         <div className="bg-white bg-opacity-25 my-4 w-full h-px"></div>
 
-        <button className="flex justify-between items-center w-full font-bold text-xs uppercase tracking-widest">
+        <button className="flex justify-between items-center w-full font-bold text-xs uppercase tracking-widest cursor-pointer">
           Read Story
           <span className="w-11 h-3.5">
             <img
               src="/assets/images/shared/desktop/arrow.svg"
-              alt=""
+              alt="Arrow right"
               className="invert"
             />
           </span>

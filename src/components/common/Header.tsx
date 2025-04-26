@@ -20,6 +20,7 @@ export default function Header() {
             className="relative focus:outline-none w-5 h-8 cursor-pointer"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
           >
             <span
               className={`absolute w-5 h-px bg-black transition-transform duration-300 ${
@@ -58,7 +59,7 @@ export default function Header() {
 
         {/* Desktop CTA Button */}
         <div className="hidden md:block py-4">
-          <button className="bg-black hover:bg-[#dfdfdf] w-[158px] h-10 font-bold text-white hover:text-black text-xs uppercase tracking-widest transition-colors duration-300">
+          <button className="bg-black hover:bg-[#dfdfdf] w-[158px] h-10 font-bold text-white hover:text-black text-xs uppercase tracking-widest transition-colors duration-300 cursor-pointer">
             Get an Invite
           </button>
         </div>

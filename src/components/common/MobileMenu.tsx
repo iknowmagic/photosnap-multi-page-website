@@ -9,8 +9,9 @@ export default function MobileMenu() {
       {/* Backdrop overlay */}
       {mobileMenuOpen && (
         <div
-          className="md:hidden z-20 fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500"
+          className="md:hidden z-20 fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500 cursor-pointer"
           onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
         />
       )}
 
@@ -48,7 +49,7 @@ export default function MobileMenu() {
           {/* Divider line */}
           <div className="bg-black bg-opacity-25 my-5 w-full h-px"></div>
 
-          <button className="bg-black w-full h-12 font-bold text-white text-sm uppercase tracking-widest">
+          <button className="bg-black w-full h-12 font-bold text-white text-sm uppercase tracking-widest cursor-pointer">
             Get an Invite
           </button>
         </div>

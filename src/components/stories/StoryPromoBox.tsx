@@ -23,6 +23,8 @@ export default function StoryPromoBox({
       <div
         className="md:flex-1 bg-cover bg-no-repeat w-full h-[271px] md:h-full"
         style={{ backgroundImage: `url(${imagePath})` }}
+        role="img"
+        aria-label={`Image for ${title}`}
       ></div>
 
       <div className="flex flex-col md:flex-1 md:justify-center px-8 md:px-14 lg:px-28 py-14">
@@ -32,10 +34,13 @@ export default function StoryPromoBox({
 
         <div className="opacity-60 mt-4 mb-6">{info}</div>
 
-        <button className="flex items-center mt-2 md:mt-8 font-bold text-xs hover:underline uppercase tracking-widest">
+        <button className="flex items-center mt-2 md:mt-8 font-bold text-xs hover:underline uppercase tracking-widest cursor-pointer">
           View The Stories
           <span className="ml-4 w-11 h-3.5">
-            <img src="/assets/images/shared/desktop/arrow.svg" alt="" />
+            <img
+              src="/assets/images/shared/desktop/arrow.svg"
+              alt="Arrow right"
+            />
           </span>
         </button>
       </div>

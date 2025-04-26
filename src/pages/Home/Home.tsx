@@ -21,12 +21,12 @@ export default function Home() {
             others.
           </p>
 
-          <button className="flex items-center font-bold text-xs hover:underline uppercase tracking-widest">
+          <button className="flex items-center font-bold text-xs hover:underline uppercase tracking-widest cursor-pointer">
             Get an Invite
             <span className="ml-4 w-11 h-3.5">
               <img
                 src="/assets/images/shared/desktop/arrow.svg"
-                alt=""
+                alt="Arrow right"
                 className="invert"
               />
             </span>
@@ -38,6 +38,8 @@ export default function Home() {
           style={{
             backgroundImage: `url('/assets/images/home/desktop/create-and-share.jpg')`,
           }}
+          role="img"
+          aria-label="Photographer with camera"
         ></div>
       </section>
 

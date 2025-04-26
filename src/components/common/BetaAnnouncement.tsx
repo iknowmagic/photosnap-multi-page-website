@@ -16,12 +16,12 @@ export default function BetaAnnouncement() {
       </div>
 
       <div className="lg:justify-self-end lg:self-center md:col-span-2 lg:col-span-1">
-        <button className="flex items-center mt-3 font-bold text-xs hover:underline uppercase tracking-widest">
+        <button className="flex items-center mt-3 font-bold text-xs hover:underline uppercase tracking-widest cursor-pointer">
           Get an Invite
           <span className="ml-4 w-11 h-3.5">
             <img
               src="/assets/images/shared/desktop/arrow.svg"
-              alt=""
+              alt="Arrow right"
               className="invert"
             />
           </span>

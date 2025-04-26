@@ -27,7 +27,7 @@ export default function Footer() {
               <div className="top-0 left-0 absolute">
                 <img
                   src="/assets/images/shared/desktop/logo.svg"
-                  alt=""
+                  alt="Photosnap logo accent"
                   className="invert w-[170px] h-4 clip-rect-logo"
                 />
               </div>
@@ -40,10 +40,10 @@ export default function Footer() {
               <a
                 key={icon.name}
                 href="#"
-                className="hover:filter-none brightness-0 invert w-5 h-5 transition-all duration-300"
-                aria-label={icon.name}
+                className="hover:filter-none brightness-0 invert w-5 h-5 transition-all duration-300 cursor-pointer"
+                aria-label={`Follow us on ${icon.name}`}
               >
-                <img src={icon.path} alt={icon.name} />
+                <img src={icon.path} alt={`${icon.name} icon`} />
               </a>
             ))}
           </div>
@@ -83,7 +83,7 @@ export default function Footer() {
               <span className="ml-4 w-11 h-3.5">
                 <img
                   src="/assets/images/shared/desktop/arrow.svg"
-                  alt=""
+                  alt="Arrow right"
                   className="invert"
                 />
               </span>
