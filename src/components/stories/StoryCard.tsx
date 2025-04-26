@@ -12,7 +12,7 @@ export default function StoryCard({
   date,
 }: StoryCardProps) {
   // Get the appropriate image path
-  const imagePath = `/images/stories/desktop/${image}`
+  const imagePath = `/assets/images/stories/desktop/${image}`
 
   return (
     <div
@@ -37,7 +37,7 @@ export default function StoryCard({
           Read Story
           <span className="w-11 h-3.5">
             <img
-              src="/images/shared/desktop/arrow.svg"
+              src="/assets/images/shared/desktop/arrow.svg"
               alt=""
               className="invert"
             />

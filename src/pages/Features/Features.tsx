@@ -24,7 +24,7 @@ export default function Features() {
         <div
           className="md:flex-1 md:order-0 bg-cover bg-center h-[294px] md:h-full"
           style={{
-            backgroundImage: `url('/images/features/desktop/hero.jpg')`,
+            backgroundImage: `url('/assets/images/features/desktop/hero.jpg')`,
           }}
         ></div>
       </section>

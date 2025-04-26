@@ -14,7 +14,7 @@ export default function StoryPromoBox({
   invert = false,
 }: StoryPromoBoxProps) {
   // Get the appropriate image path
-  const imagePath = `/images/home/desktop/${image}`
+  const imagePath = `/assets/images/home/desktop/${image}`
 
   return (
     <div
@@ -35,7 +35,7 @@ export default function StoryPromoBox({
         <button className="flex items-center mt-2 md:mt-8 font-bold text-xs hover:underline uppercase tracking-widest">
           View The Stories
           <span className="ml-4 w-11 h-3.5">
-            <img src="/images/shared/desktop/arrow.svg" alt="" />
+            <img src="/assets/images/shared/desktop/arrow.svg" alt="" />
           </span>
         </button>
       </div>

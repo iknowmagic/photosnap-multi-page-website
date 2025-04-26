@@ -10,7 +10,7 @@ export default function Header() {
         {/* Logo */}
         <div className="py-6">
           <Link to="/" onClick={() => mobileMenuOpen && toggleMobileMenu()}>
-            <img src="/images/shared/desktop/logo.svg" alt="Photosnap" />
+            <img src="/assets/images/shared/desktop/logo.svg" alt="Photosnap" />
           </Link>
         </div>
 

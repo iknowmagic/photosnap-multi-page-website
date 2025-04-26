@@ -12,7 +12,7 @@ export default function FeatureBox({
   children,
 }: FeatureBoxProps) {
   // Get image path for the feature icon
-  const imagePath = `/images/features/desktop/${image}`
+  const imagePath = `/assets/images/features/desktop/${image}`
 
   return (
     <div className="flex flex-col justify-center items-center mb-9 md:mb-14 lg:mb-20 text-center">

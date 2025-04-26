@@ -25,7 +25,7 @@ export default function Home() {
             Get an Invite
             <span className="ml-4 w-11 h-3.5">
               <img
-                src="/images/shared/desktop/arrow.svg"
+                src="/assets/images/shared/desktop/arrow.svg"
                 alt=""
                 className="invert"
               />
@@ -36,7 +36,7 @@ export default function Home() {
         <div
           className="md:flex-1 md:order-0 bg-cover bg-center h-[294px] md:h-full"
           style={{
-            backgroundImage: `url('/images/home/desktop/create-and-share.jpg')`,
+            backgroundImage: `url('/assets/images/home/desktop/create-and-share.jpg')`,
           }}
         ></div>
       </section>

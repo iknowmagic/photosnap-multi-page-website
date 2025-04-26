@@ -62,7 +62,9 @@ export default function Pricing() {
 
         <div
           className="md:flex-1 md:order-0 bg-cover bg-center h-[294px] md:h-full"
-          style={{ backgroundImage: `url('/images/pricing/desktop/hero.jpg')` }}
+          style={{
+            backgroundImage: `url('/assets/images/pricing/desktop/hero.jpg')`,
+          }}
         ></div>
       </section>
 
@@ -165,7 +167,7 @@ export default function Pricing() {
                   <td className="py-6 text-center">
                     {feature.plans.basic && (
                       <img
-                        src="/images/pricing/desktop/check.svg"
+                        src="/assets/images/pricing/desktop/check.svg"
                         alt="Included"
                         className="inline-block"
                       />
@@ -174,7 +176,7 @@ export default function Pricing() {
                   <td className="py-6 text-center">
                     {feature.plans.pro && (
                       <img
-                        src="/images/pricing/desktop/check.svg"
+                        src="/assets/images/pricing/desktop/check.svg"
                         alt="Included"
                         className="inline-block"
                       />
@@ -183,7 +185,7 @@ export default function Pricing() {
                   <td className="py-6 text-center">
                     {feature.plans.business && (
                       <img
-                        src="/images/pricing/desktop/check.svg"
+                        src="/assets/images/pricing/desktop/check.svg"
                         alt="Included"
                         className="inline-block"
                       />

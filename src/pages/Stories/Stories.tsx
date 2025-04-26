@@ -107,7 +107,7 @@ export default function Stories() {
       <section
         className="relative bg-cover bg-center text-white"
         style={{
-          backgroundImage: `url('/images/stories/desktop/moon-of-appalacia.jpg')`,
+          backgroundImage: `url('/assets/images/stories/desktop/moon-of-appalacia.jpg')`,
         }}
       >
         <div className="px-8 md:px-10 lg:px-28 py-14 md:py-32 lg:py-40 md:max-w-[760px] lg:max-w-[500px]">
@@ -135,7 +135,7 @@ export default function Stories() {
             Read the Story
             <span className="ml-4 w-11 h-3.5">
               <img
-                src="/images/shared/desktop/arrow.svg"
+                src="/assets/images/shared/desktop/arrow.svg"
                 alt=""
                 className="invert"
               />

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   // Social media icons
   const socialIcons = [
-    { name: 'facebook', path: '/images/shared/desktop/facebook.svg' },
-    { name: 'youtube', path: '/images/shared/desktop/youtube.svg' },
-    { name: 'twitter', path: '/images/shared/desktop/twitter.svg' },
-    { name: 'pinterest', path: '/images/shared/desktop/pinterest.svg' },
-    { name: 'instagram', path: '/images/shared/desktop/instagram.svg' },
+    { name: 'facebook', path: '/assets/images/shared/desktop/facebook.svg' },
+    { name: 'youtube', path: '/assets/images/shared/desktop/youtube.svg' },
+    { name: 'twitter', path: '/assets/images/shared/desktop/twitter.svg' },
+    { name: 'pinterest', path: '/assets/images/shared/desktop/pinterest.svg' },
+    { name: 'instagram', path: '/assets/images/shared/desktop/instagram.svg' },
   ]
 
   return (
@@ -17,13 +17,13 @@ export default function Footer() {
         <div className="flex justify-center md:justify-start">
           <Link to="/" className="inline-block relative">
             <img
-              src="/images/shared/desktop/logo.svg"
+              src="/assets/images/shared/desktop/logo.svg"
               alt="Photosnap"
               className="invert"
             />
             <div className="top-0 left-0 absolute">
               <img
-                src="/images/shared/desktop/logo.svg"
+                src="/assets/images/shared/desktop/logo.svg"
                 alt=""
                 className="w-[170px] h-4 clip-rect-logo"
               />
@@ -79,7 +79,7 @@ export default function Footer() {
             Get an Invite
             <span className="ml-4 w-11 h-3.5">
               <img
-                src="/images/shared/desktop/arrow.svg"
+                src="/assets/images/shared/desktop/arrow.svg"
                 alt=""
                 className="invert"
               />
