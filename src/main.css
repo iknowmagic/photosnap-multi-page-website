@@ -2,8 +2,43 @@
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 
+/* Google Font - DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* Base styles */
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  min-width: 375px;
+}
+
+h1,
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 3.33px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+  }
+}
+
+/* Custom classes */
+.clip-rect-logo {
+  clip: rect(0, 23px, 16px, 0);
 }
