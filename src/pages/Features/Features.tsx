@@ -1,5 +1,4 @@
 import FeatureBox from '@/components/feature/FeatureBox'
-import BetaAnnouncement from '@/components/common/BetaAnnouncement'
 
 export default function Features() {
   return (
@@ -63,9 +62,6 @@ export default function Features() {
           over the top tooling to add friction to creating stories.
         </FeatureBox>
       </section>
-
-      {/* Beta Announcement Banner */}
-      <BetaAnnouncement />
     </>
   )
 }
