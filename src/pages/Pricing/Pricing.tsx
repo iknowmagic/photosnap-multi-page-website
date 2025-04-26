@@ -71,7 +71,7 @@ export default function Pricing() {
       {/* Pricing Plans */}
       <section className="px-8 md:px-10 lg:px-40 py-16 md:py-28">
         {/* Pricing Toggle */}
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-10 pb-5">
           <PlanToggle active={isYearly} onChange={setIsYearly} />
         </div>
 
