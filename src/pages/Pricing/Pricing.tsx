@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import PlanToggle from '@/components/pricing/PlanToggle'
-import BetaAnnouncement from '@/components/common/BetaAnnouncement'
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false)
@@ -197,9 +196,6 @@ export default function Pricing() {
           </table>
         </div>
       </section>
-
-      {/* Beta Announcement Banner */}
-      <BetaAnnouncement />
     </>
   )
 }
