@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* CTA Button */}
           <div className="flex justify-center md:justify-end">
-            <button className="flex justify-center md:justify-end items-center font-bold text-xs hover:underline uppercase tracking-widest">
+            <button className="flex justify-center md:justify-end items-center font-bold text-xs hover:underline uppercase tracking-widest cursor-pointer">
               Get an Invite
               <span className="ml-4 w-11 h-3.5">
                 <img
